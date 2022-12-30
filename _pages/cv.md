@@ -9,11 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Ph.D. student seeking machine learning research internship.
-<br>
-Research interests are the intersection of machine learning and software engineering.
-<br>
-Experience in deep learning, machine learning, program analysis, software development.
+Rice University student majoring in Computer Science and Mathematics and minoring in Global Health Technologies. 
 
 
 # Education
