@@ -1,20 +1,11 @@
 ---
 title: "Teaching Assistant for COMP 140"
 collection: teaching
-type: "Undergraduate course"
+type: "COMP 140"
 permalink: /teaching/comp140
 venue: "Rice University, Department of Computer Science"
 date: 2022-08-01
 location: "Houston, TX"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+Host weekly office hours for 350+ undergraduates and offer feedback on algorithmic concepts, exams, and homework assignments. Teach concepts such as Markov Models, A* Search Algorithm, Depth-First Search, Breadth-First Search, Matrices, Probabilistic Models.
