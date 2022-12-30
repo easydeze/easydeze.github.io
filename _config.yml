@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Benjamin Steenhoek"
+title                    : "Danny Zhang"
 title_separator          : "-"
-name                     : &name "Benjamin Steenhoek"
-description              : &description "PhD student at Iowa State University"
-url                      : https://benjijang.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Danny Zhang"
+description              : &description "undergraduate @ rice university"
+url                      : https://easydeze.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "bstee615/bstee615.github.io"
+repository               : "easydeze/easydeze.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,15 +80,15 @@ analytics:
 
 # Site Author
 author:
-  name             : *name
+  name             : "Danny Zhang"
   avatar           : "profile.png"
-  bio              : *description
-  location         : #"Ames, IA"
-  employer         : "Iowa State University"
+  bio              : "undergrad @ rice university"
+  location         :
+  employer         : "Rice University"
   pubmed           :
-  googlescholar    : "https://scholar.google.com/citations?user=dzXbaEMAAAAJ"
-  email            : benjis@iastate.edu
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  googlescholar    : "https://scholar.google.com/citations?user=3zmytB4AAAAJ&hl=en"
+  email            :
+  researchgate     :  "https://www.researchgate.net/profile/Danny-Zhang-2"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,20 +96,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "bstee615"
+  github           : "easydeze"
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  impactstory      : 
   lastfm           :
-  linkedin         : ben-steenhoek
-  orcid            : "http://orcid.org/0000-0001-6175-105X"
+  linkedin         : "https://www.linkedin.com/in/danny-zhang-34b076198/"
+  orcid            : 
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : 
   steam            :
   tumblr           :
-  twitter          : "benjisteenhoek"
+  twitter          : 
   vine             :
   weibo            :
   xing             :
@@ -175,7 +175,16 @@ kramdown:
 
 # Collections
 collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
   publications:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  talks:
     output: true
     permalink: /:collection/:path/
 
@@ -189,8 +198,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-      imagealt: "No alternative text"
-      imageoffset: 0px
       read_time: true
       comments: true
       share: true
@@ -237,19 +244,6 @@ defaults:
       layout: talk
       author_profile: true
       share: true
-  # _notes
-  - scope:
-      path: ""
-      type: notes
-    values:
-      layout: single
-      author_profile: true
-      imagealt: "No alternative text"
-      imageoffset: 0px
-      read_time: true
-      comments: true
-      share: true
-      related: true
 
 # Sass/SCSS
 sass:
