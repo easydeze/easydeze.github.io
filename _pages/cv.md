@@ -46,4 +46,4 @@ Rice University student majoring in Computer Science and Mathematics and minorin
 * Web Development: ReactJS, HTML, CSS.
 
 # Leadership
-* Webmaster and Promotions Chair of Rice Pre-Medical Society, Fall 2022 - Present
+* Webmaster and Promotions Chair of [Rice Pre-Medical Society](https://www.ricepremed.com/)
