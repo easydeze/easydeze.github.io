@@ -44,8 +44,7 @@
   organization: Big & Mini
   location: Houston, TX
   text: |
-    <ul> Coded the formatting, design, and on-click interactions of the dashboard, sign-up, log-in, blog, and FAQ pages of a social platform that
-aims to bridge the gap between 6,000 elderly and youth through intergenerational video calls in 50 states and 22+ countries. </li>
+    <ul> Coded the formatting, design, and on-click interactions of the dashboard, sign-up, log-in, blog, and FAQ pages of a social platform that aims to bridge the gap between 6,000 elderly and youth through intergenerational video calls in 50 states and 22+ countries. </li>
     <li> Utilized ReactJS, JavaScript, HTML, and CSS to develop the interactive user interface and integrated changes with backend using Git. </li>
     <li> Prototyped website and mobile application layouts and animations using Figma in correspondence with team’s product designer. </li>
     </ul>
