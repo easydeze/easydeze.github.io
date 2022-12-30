@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Danny Zhang"
+title                    : "Benjamin Steenhoek"
 title_separator          : "-"
-name                     : &name "Danny Zhang"
-description              : &description "undergraduate @ rice university"
+name                     : &name "Benjamin Steenhoek"
+description              : &description "PhD student at Iowa State University"
 url                      : https://easydeze.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "easydeze/easydeze.github.io"
@@ -80,15 +80,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Danny Zhang"
+  name             : *name
   avatar           : "profile.png"
-  bio              : "undergrad @ rice university"
-  location         :
-  employer         : "Rice University"
+  bio              : *description
+  location         : #"Ames, IA"
+  employer         : "Iowa State University"
   pubmed           :
-  googlescholar    : "https://scholar.google.com/citations?user=3zmytB4AAAAJ&hl=en"
-  email            :
-  researchgate     :  "https://www.researchgate.net/profile/Danny-Zhang-2"
+  googlescholar    : "https://scholar.google.com/citations?user=dzXbaEMAAAAJ"
+  email            : benjis@iastate.edu
+  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,20 +96,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "easydeze"
+  github           : "bstee615"
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : 
+  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/danny-zhang-34b076198/"
-  orcid            : 
+  linkedin         : ben-steenhoek
+  orcid            : "http://orcid.org/0000-0001-6175-105X"
   pinterest        :
   soundcloud       :
-  stackoverflow    : 
+  stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : 
+  twitter          : "benjisteenhoek"
   vine             :
   weibo            :
   xing             :
@@ -175,16 +175,7 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
     output: true
     permalink: /:collection/:path/
 
@@ -198,6 +189,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      imagealt: "No alternative text"
+      imageoffset: 0px
       read_time: true
       comments: true
       share: true
@@ -244,6 +237,19 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _notes
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: single
+      author_profile: true
+      imagealt: "No alternative text"
+      imageoffset: 0px
+      read_time: true
+      comments: true
+      share: true
+      related: true
 
 # Sass/SCSS
 sass:
