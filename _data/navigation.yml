@@ -1,25 +1,25 @@
 # main links links
 main:
+  - title: "CV"
+    url: /cv/
+    
   - title: "Publications"
     url: /publications/
 
   # - title: "Talks"
   #   url: /talks/    
 
-  # - title: "Teaching"
-  #   url: /teaching/    
+  - title: "Teaching"
+    url: /teaching/    
     
   # - title: "Portfolio"
   #   url: /portfolio/
         
-  - title: "Blog Posts"
-    url: /blog-posts/
+  # - title: "Blog Posts"
+  #   url: /blog-posts/
         
-  - title: "CV"
-    url: /cv/
-        
-  - title: "Stream"
-    url: /stream/
+  # - title: "Stream"
+  #   url: /stream/
     
   # - title: "Guide"
   #   url: /markdown/
