@@ -35,27 +35,15 @@ Rice University student majoring in Computer Science and Mathematics and minorin
 </ul>
 
 
-# My Projects
-
-## Primary developer
-* [cfactor](https://github.com/bstee615/cfactor): Scalable, policy-driven refactoring for C programs (Python/srcML).
-* [tree-climber](https://github.com/bstee615/tree-climber): Scalable program analysis tools for C built on tree-sitter (Python).
-* [pal-tools](https://github.com/bstee615/pal-tools): Dynamic analysis and code generation, using Intel Pin (C++) and LLVM (Python).
-* [rarl](https://github.com/bstee615/rarl): Reproduction of <a href="https://doi.org/10.48550/arXiv.1703.02702">Robust Adversarial Reinforcement Learning (Pinto et al. 2017)</a> (PyTorch/stable-baselines).
-
-## Team project
-* [animal-cognitive](https://github.com/animal-cognitive/AnimalAI-Olympics/tree/feature/whole-cache-agent): Deep reinforcement learning models with embodied animal cognition (PyTorch/rllib).
-* [precise-interrupts](https://github.com/isu-cpre581-pangolin/gem5/tree/sleepy): Reproducing a historical interrupt handling paper in ARM architecture (C++/gem5).
+# Featured Projects
+* [Todoify](https://github.com/easydeze/to-do-list): Developed a full-stack web application that organizes to-do items using an inbox/calendar system. Store projects, folders, and to-do items in JSON format to localStorage in the user’s computer using the Web Storage API (JavaScript, HTML, CSS, FlexBox, Webpack, NPM, Git).
+* [Natural Language Processing](https://github.com/easydeze/natural-language-processing): Performed English part-of-speech (POS) tagging using Hidden Markov Models and Bayesian Inference on 2,000,000 training words. Implemented Viterbi’s algorithm on bigram and trigram models to achieve up to 97% accuracy on testing data of 900+ words (Python).
+* [CovidScreen](https://devpost.com/software/covidscreen): Built a web application that predicts whether user has COVID-19 through a series of diagnostic questions using JavaScript events (ReactJS, JavaScript, HTML, CSS, MaterialUI, Git).
 
 
 # Technical Skills
-* Programming Languages: Proficient in Python and C#. Knowledge of C++, Java, JavaScript, SQL.
-* Machine Learning & data scraping: PyTorch, rllib, pandas, numpy, Selenium, beautifulsoup.
-* Web Development: Vue, ASP.NET Core, .NET Framework, SQL Server, Azure Functions, ACI, VMs, ML Studio.
-* Computer architecture and program analysis: Antlr, LLVM, Intel Pin, gem5, abstract interpretation, fuzzing.
-* DevOps: Git, Azure DevOps, and CI/CD, Slurm batch processing, Linux server administration.
-
+* Programming Languages: Proficient in Python, Java, R. Knowledge of C++, C, JavaScript, SQL.
+* Web Development: ReactJS, HTML, CSS.
 
 # Leadership
-* Science education outreach at Greenville County Juvenile Detention, Fall 2018/Spring 2019
-* Vice president of Phi Beta Chi society, Spring 2018
+* Webmaster and Promotions Chair of Rice Pre-Medical Society, Fall 2022 - Present
