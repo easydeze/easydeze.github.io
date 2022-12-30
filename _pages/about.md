@@ -12,7 +12,7 @@ My name is Danny Zhang, and I am a rising junior at Rice University studying Com
 
 I've always been interested in the impact that computer science can have on medical and healthcare applications, and I have pursued bioinformatics research and software development opportunities over the past couple of years to that end. I am currently researching at MD Anderson Cancer Center under the guidance of [Dr. Cassian Yee](https://faculty.mdanderson.org/profiles/cassian_yee.html), studying the impact that T-Cells can have on acute myeloid leukemia cells. 
 
-This summer, I will be venturing out to see what the world of software engineering holds, and I can't wait to see where it takes me!
+This summer, I will be venturing out to see what the world of software engineering holds!
 
 Research Interests
 ======
