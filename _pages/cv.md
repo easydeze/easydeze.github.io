@@ -27,7 +27,7 @@ Rice University student majoring in Computer Science and Mathematics and minorin
 # Publications
 <ul>
 {% for post in site.publications reversed %}
-  {% assign cv_venues = "conference-paper,thesis,poster" | split: "," %}
+  {% assign cv_venues = "research-paper,poster" | split: "," %}
   {% if cv_venues contains post.venue-type %}
     {% include archive-single-cv.html %}
   {% endif %}
