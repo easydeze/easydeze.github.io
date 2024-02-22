@@ -1,5 +1,31 @@
+- title: Software Engineer Intern
+  date: May 2023 - Jul 2023
+  organization: "Datadog"
+  location: New York, NY
+  text: |
+    * Incoming Software Engineer Intern at Datadog for Summer 2024.
+
+- title: Software Engineer Intern
+  date: May 2023 - Jul 2023
+  organization: "Expedia Group"
+  location: Austin, TX
+  text: |
+    * Launch iOS development of 6 financial widgets for Vrbo Owner app using Swift, GraphQL, Apollo, Postman API.
+    * Display revenue graph, monthly profit/bookings in WidgetKit; fetch JSON every 15 minutes via TimelineProvider.
+    * Synchronize 50+ parallel HTTP calls to decode internal payout data in DispatchGroup; increase speedup by 120x.
+    * Leverage Bloomberg’s currency conversion API; support 160 world currencies for rental payouts using device locale.
+
+- title: Teaching Assistant
+  date: Aug 2022 - Present
+  organization: "Rice University, CS and Math Departments"
+  location: Houston, TX
+  text: |
+    * Teach Python, Big-O Analysis, A* Search Algo, DFS, BFS, LASSO regression to 500+ students in COMP 140.
+    * Instruct 250+ students in COMP 215 in object-oriented programming, test-driven development, and Java projects.
+    * Tutor 120+ students in MATH 355; linear algebra topics cover Vector Spaces, Eigenvalues, Gram-Schmidt Process.
+
 - title: Research Assistant
-  date: Aug 2021 - Present
+  date: Aug 2021 - Aug 2022
   organization: MD Anderson Cancer Center, Yee Lab
   location: Houston, TX
   text: |
@@ -7,21 +33,6 @@
     * Elucidate the effect of BH3-mimetics on acute myeloid leukemia (AML) cell lines and on CD8+ T-Cells under the guidance of Dr. Cassian Yee.
     * Utilized flow cytometry procedures and carried out cell culturing protocols.
 
-- title: Teaching Assistant
-  date: Aug 2022 - Present
-  organization: "Rice University, COMP 140: Computational Thinking"
-  location: Houston, TX
-  text: |
-    * Hold weekly office hours for over 350 undergraduate students and grade various assignments/exams.
-    * Invited to become a teaching assistant for COMP 140 in the upcoming Spring 2023 semester.
-
-- title: Mathematics Grader
-  date: Jan 2022 - Present
-  organization: "Rice University, MATH 355: Linear Algebra"
-  location: Houston, TX
-  text: |
-    * Grader for MATH 355: Linear Algebra over the Spring 2021 and Fall 2022 semesters.
-    * Provided feedback on assignments of 65+ students and tutored topics such as Matrix Operations, Eigenvalues, Determinants, Gram-Schmidt Process.
 
 - title: Research Assistant and Bioinformatician
   date: Jun 2019 - Aug 2021
