@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Rice University student majoring in Computer Science and Mathematics and minoring in Global Health Technologies. 
+Rice University student majoring in Computer Science and Mathematics. 
 
 
 # Education
@@ -42,7 +42,8 @@ Rice University student majoring in Computer Science and Mathematics and minorin
 
 
 # Technical Skills
-* Programming Languages: Proficient in Python, Java, R. Knowledge of C++, C, JavaScript, SQL.
+* Programming Languages: Proficient in Python, Java, C++, C, JavaScript, R.
+* Mobile Development: Swift, Kotlin, GraphQL.
 * Web Development: ReactJS, HTML, CSS.
 
 # Leadership
