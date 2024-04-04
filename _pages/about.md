@@ -10,7 +10,7 @@ redirect_from:
 
 My name is Danny Zhang, and I am a junior at Rice University studying Computer Science and Mathematics. 
 
-I'm keenly interested in mobile development and full-stack development, especially as it pertains to user-facing products. I was an iOS Engineer Intern at Expedia Group and will be a Software Engineer Intern at Datadog this coming summer.
+I'm interested in mobile development and backend development, especially as it pertains to user-facing products. I was an iOS Engineer Intern at Expedia Group and will be a Software Engineer Intern at Datadog this coming summer.
 
 Research Interests
 ======
