@@ -1,52 +1,63 @@
 - title: Software Engineer Intern
-  date: May 2023 - Jul 2023
+  date: May 2024 - Jul 2024
   organization: "Datadog"
   location: New York, NY
   text: |
-    * Incoming Software Engineer Intern at Datadog for Summer 2024.
+    <ul>
+    <li>Incoming Software Engineer Intern at Datadog for Summer 2024.</li>
+    </ul>
 
 - title: Software Engineer Intern
   date: May 2023 - Jul 2023
   organization: "Expedia Group"
   location: Austin, TX
   text: |
-    * Launch iOS development of 6 financial widgets for Vrbo Owner app using Swift, GraphQL, Apollo, Postman API.
-    * Display revenue graph, monthly profit/bookings in WidgetKit; fetch JSON every 15 minutes via TimelineProvider.
-    * Synchronize 50+ parallel HTTP calls to decode internal payout data in DispatchGroup; increase speedup by 120x.
-    * Leverage Bloomberg’s currency conversion API; support 160 world currencies for rental payouts using device locale.
+    <ul>
+    <li>Launch iOS development of 6 financial widgets for Vrbo Owner app using Swift, GraphQL, Apollo, Postman API.</li>
+    <li>Display revenue graph, monthly profit/bookings in WidgetKit; fetch JSON every 15 minutes via TimelineProvider.</li>
+    <li>Synchronize 50+ parallel HTTP calls to decode internal payout data in DispatchGroup; increase speedup by 120x.</li>
+    <li>Leverage Bloomberg’s currency conversion API; support 160 world currencies for rental payouts using device locale.</li>
+    </ul>
 
 - title: Teaching Assistant
   date: Aug 2022 - Present
   organization: "Rice University, CS and Math Departments"
   location: Houston, TX
   text: |
-    * Teach Python, Big-O Analysis, A* Search Algo, DFS, BFS, LASSO regression to 500+ students in COMP 140.
-    * Instruct 250+ students in COMP 215 in object-oriented programming, test-driven development, and Java projects.
-    * Tutor 120+ students in MATH 355; linear algebra topics cover Vector Spaces, Eigenvalues, Gram-Schmidt Process.
+    <ul>
+    <li>Teach Python, Big-O Analysis, A* Search Algorithm, DFS, BFS, LASSO regression to 500+ students in COMP 140.</li>
+    <li>Instruct 250+ students in COMP 215 in object-oriented programming, test-driven development, and Java projects.</li>
+    <li>Tutor 120+ students in MATH 355; linear algebra topics cover Vector Spaces, Eigenvalues, Gram-Schmidt Process.</li>
+    </ul>
 
 - title: Research Assistant
   date: Aug 2021 - Aug 2022
   organization: MD Anderson Cancer Center, Yee Lab
   location: Houston, TX
   text: |
-    * Selected by the CPRIT-CURE Summer Undergraduate Program for Summer 2022, which has a 15% acceptance rate from a pool of over 400 applicants.
-    * Elucidate the effect of BH3-mimetics on acute myeloid leukemia (AML) cell lines and on CD8+ T-Cells under the guidance of Dr. Cassian Yee.
-    * Utilized flow cytometry procedures and carried out cell culturing protocols.
-
+    <ul>
+    <li>Selected by the CPRIT-CURE Summer Undergraduate Program for Summer 2022, which has a 15% acceptance rate from a pool of over 400 applicants.</li>
+    <li>Elucidate the effect of BH3-mimetics on acute myeloid leukemia (AML) cell lines and on CD8+ T-Cells under the guidance of Dr. Cassian Yee.</li>
+    <li>Utilized flow cytometry procedures and carried out cell culturing protocols.</li>
+    </ul>
 
 - title: Research Assistant and Bioinformatician
   date: Jun 2019 - Aug 2021
   organization: Northwestern Medicine, Division of Gastroenterology and Hepatology
   location: Chicago, IL
   text: |
-    * Investigated the Unfolded Protein Response and non-alcoholic fatty liver disease (NAFLD) under the guidance of Dr. Richard Green.
-    * Co-authored and visualized significant differential pathway analyses in 2 papers in PLOS ONE and Journal of Lipid Research.
+    <ul>
+    <li>Investigated the Unfolded Protein Response and non-alcoholic fatty liver disease (NAFLD) under the guidance of Dr. Richard Green.</li>
+    <li>Co-authored and visualized significant differential pathway analyses in 2 papers in PLOS ONE and Journal of Lipid Research.</li>
+    </ul>
 
 - title: Frontend Developer
   date: May 2020 – Aug 2020
   organization: Big & Mini
   location: Houston, TX
   text: |
-    * Coded the formatting, design, and on-click interactions of the dashboard, sign-up, log-in, blog, and FAQ pages of a social platform that aims to bridge the gap between 6,000 elderly and youth through intergenerational video calls in 50 states and 22+ countries.
-    * Utilized ReactJS, JavaScript, HTML, and CSS to develop the interactive user interface and integrated changes with backend using Git.
-    * Prototyped website and mobile application layouts and animations using Figma in correspondence with team’s product designer.
+    <ul>
+    <li>Coded the formatting, design, and on-click interactions of the dashboard, sign-up, log-in, blog, and FAQ pages of a social platform that aims to bridge the gap between 6,000 elderly and youth through intergenerational video calls in 50 states and 22+ countries.</li>
+    <li>Utilized ReactJS, JavaScript, HTML, and CSS to develop the interactive user interface and integrated changes with backend using Git.</li>
+    <li>Prototyped website and mobile application layouts and animations using Figma in correspondence with team’s product designer.</li>
+    </ul>
