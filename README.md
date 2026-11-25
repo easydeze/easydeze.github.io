@@ -20,9 +20,10 @@ npm run build
 
 ## Deployment
 
-Pushes to `master` deploy `dist/` to GitHub Pages through
-`.github/workflows/deploy-pages.yml`.
+`npm run build` compiles the Vite app and synchronizes the static output into
+the repository root. Pushes to `master` are then published by the repository's
+branch-based GitHub Pages configuration.
 
-The workflow explicitly clears any custom domain before deployment, so the site
-is served from [easydeze.github.io](https://easydeze.github.io/). Update that
-workflow when a new custom domain is ready.
+There is no `CNAME`, so the site is served from
+[easydeze.github.io](https://easydeze.github.io/) until a new custom domain is
+ready.
