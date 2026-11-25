@@ -60,6 +60,21 @@ a {
   text-align: left;
 }
 
+.intro-title-row {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.75rem, 1.4vw, 1.15rem);
+}
+
+.site-logo {
+  display: block;
+  width: clamp(3rem, 4.6vw, 4.25rem);
+  height: clamp(3rem, 4.6vw, 4.25rem);
+  flex: 0 0 auto;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
 .intro-header h1 {
   margin: 0;
   color: #49382d;
@@ -671,6 +686,10 @@ a {
 
   .intro-header {
     width: var(--layout-width);
+  }
+
+  .intro-title-row {
+    align-items: flex-start;
   }
 
   .game-layout {

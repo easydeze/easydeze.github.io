@@ -397,7 +397,10 @@ function App() {
     <main className="site">
       <section className="storefront" aria-labelledby="intro-title">
         <header className="intro-header">
-          <h1 id="intro-title">Hi, my name’s Danny.</h1>
+          <div className="intro-title-row">
+            <img className="site-logo" src="/images/dz-logo-pixel-v1.png" alt="DZ" />
+            <h1 id="intro-title">Hi, my name’s Danny.</h1>
+          </div>
           <p>I’m a product engineer who enjoys stepping into different worlds, wearing their uniforms, and appreciating good clothes.</p>
         </header>
 
