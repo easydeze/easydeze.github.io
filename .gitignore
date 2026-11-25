@@ -1,6 +1,3 @@
-_site/
-
-Gemfile.lock
-vendor/
-*~
-logs/
+dist/
+node_modules/
+.DS_Store
