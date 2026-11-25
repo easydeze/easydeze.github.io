@@ -98,7 +98,7 @@ a {
 .scene-frame {
   position: relative;
   width: 100%;
-  aspect-ratio: 1672 / 941;
+  aspect-ratio: 1671 / 941;
   margin: 0 auto;
   overflow: hidden;
   border: 0;
@@ -256,7 +256,7 @@ a {
   position: absolute;
   z-index: 9;
   top: 56%;
-  left: 24%;
+  left: 16%;
   width: 14%;
   pointer-events: none;
 }
@@ -270,6 +270,43 @@ a {
 
 .record-player.is-playing {
   filter: drop-shadow(0 0 5px rgba(220, 169, 90, 0.75));
+}
+
+.cooper {
+  position: absolute;
+  z-index: 12;
+  top: 59%;
+  left: 61%;
+  width: 9%;
+  pointer-events: none;
+  transform-origin: 50% 90%;
+}
+
+.cooper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(2px 3px 0 rgba(74, 53, 39, 0.24));
+  image-rendering: pixelated;
+}
+
+.cooper.is-barking {
+  animation: cooper-bark-bounce 650ms steps(4, end);
+}
+
+.cooper-bark {
+  position: absolute;
+  top: -0.8rem;
+  right: -1rem;
+  padding: 0.32rem 0.45rem;
+  color: #4a382d;
+  border: 2px solid #604837;
+  background: #fff8e9;
+  box-shadow: 2px 2px 0 #8e6e55;
+  font-size: clamp(0.55rem, 0.8vw, 0.75rem);
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .control-panel {
@@ -604,6 +641,24 @@ a {
   100% {
     opacity: 0;
     transform: translate(-50%, -50%) scale(1.75);
+  }
+}
+
+@keyframes cooper-bark-bounce {
+  0%, 100% {
+    transform: translateY(0) rotate(0);
+  }
+
+  25% {
+    transform: translateY(-4px) rotate(-2deg);
+  }
+
+  50% {
+    transform: translateY(0) rotate(2deg);
+  }
+
+  75% {
+    transform: translateY(-2px) rotate(-1deg);
   }
 }
 

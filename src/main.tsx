@@ -20,7 +20,7 @@ const displays = [
     label: "Rice Alumnus",
     story: [
       "I’m a proud Rice alumnus. I graduated in May 2025 with a B.S. in Computer Science and a B.A. in Mathematics.",
-      "I was also a member of Lovett College.",
+      "EOL RRF!!",
     ],
     position: { left: "17.5%", top: "28%", width: "10%", height: "27%" },
     interactionPoint: { x: 22, y: 64 },
@@ -29,8 +29,8 @@ const displays = [
     id: "research",
     label: "Biomedical Researcher",
     story: [
-      "I published two hepatology papers at Northwestern Medicine under Dr. Richard Green.",
-      "I also studied acute myeloid leukemia at MD Anderson Cancer Center under Dr. Cassian Yee.",
+      "For most of my life, I thought I was going to pursue an M.D./Ph.D., but I had a change of heart.",
+      "Before that change, I published two hepatology papers under Dr. Richard Green at Northwestern Medicine and studied acute myeloid leukemia under Dr. Cassian Yee at MD Anderson Cancer Center.",
     ],
     position: { left: "25.5%", top: "27%", width: "8.5%", height: "25%" },
     interactionPoint: { x: 29.5, y: 61.5 },
@@ -49,8 +49,10 @@ const displays = [
     id: "rockets",
     label: "Rockets Fan",
     story: [
-      "I’ve been a Rockets fan since childhood, and I play a lot of basketball myself.",
+      "I’ll miss Jalen Green’s service. 😢",
     ],
+    href: "https://www.youtube.com/watch?v=YOhlnAgBiuk",
+    linkLabel: "Watch the tribute",
     position: { left: "38.5%", top: "22%", width: "7%", height: "23%" },
     interactionPoint: { x: 42, y: 57 },
   },
@@ -62,6 +64,7 @@ const displays = [
       "I implemented sub-300ms keyword and semantic search across its 1,300+ item Shopify catalog.",
     ],
     href: "https://komune.space/shop",
+    linkLabel: "Visit Komune",
     position: { left: "44%", top: "18%", width: "8%", height: "26%" },
     interactionPoint: { x: 48, y: 54.5 },
   },
@@ -76,7 +79,13 @@ const registerTarget = {
 const recordPlayerTarget = {
   id: "record-player",
   label: "Record Player",
-  interactionPoint: { x: 31, y: 72 },
+  interactionPoint: { x: 23, y: 68.5 },
+};
+
+const cooperTarget = {
+  id: "cooper",
+  label: "Cooper",
+  interactionPoint: { x: 65.5, y: 74 },
 };
 
 const directionForKey: Record<string, Direction> = {
@@ -142,6 +151,7 @@ function App() {
   const [activeDirections, setActiveDirections] = useState<Direction[]>([]);
   const [facing, setFacing] = useState<Direction>("right");
   const [spotifyOpen, setSpotifyOpen] = useState(false);
+  const [cooperBarking, setCooperBarking] = useState(false);
   const [destination, setDestination] = useState<Position | null>(null);
   const [destinationSplash, setDestinationSplash] = useState<DestinationSplash | null>(null);
   const activeDirectionsRef = useRef(new Set<Direction>());
@@ -152,7 +162,7 @@ function App() {
   const registerOpen = selected === "register";
   const detailOpen = Boolean(selectedDisplay) || registerOpen;
 
-  const targets = [...displays, registerTarget, recordPlayerTarget];
+  const targets = [...displays, registerTarget, recordPlayerTarget, cooperTarget];
   const closestTarget = targets.reduce((closest, target) => {
     const distance = interactionDistance(avatarPosition, target.interactionPoint);
     return distance < closest.distance ? { target, distance } : closest;
@@ -308,10 +318,47 @@ function App() {
     "--avatar-y": `${avatarPosition.y}%`,
   };
 
+  const makeCooperBark = () => {
+    const AudioContextClass = window.AudioContext
+      ?? (window as typeof window & { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+
+    if (AudioContextClass) {
+      const context = new AudioContextClass();
+      const start = context.currentTime;
+
+      [
+        { delay: 0, high: 290, low: 120 },
+        { delay: 0.18, high: 240, low: 95 },
+      ].forEach(({ delay, high, low }) => {
+        const oscillator = context.createOscillator();
+        const gain = context.createGain();
+        const barkStart = start + delay;
+
+        oscillator.type = "square";
+        oscillator.frequency.setValueAtTime(high, barkStart);
+        oscillator.frequency.exponentialRampToValueAtTime(low, barkStart + 0.14);
+        gain.gain.setValueAtTime(0.0001, barkStart);
+        gain.gain.exponentialRampToValueAtTime(0.12, barkStart + 0.015);
+        gain.gain.exponentialRampToValueAtTime(0.0001, barkStart + 0.16);
+        oscillator.connect(gain).connect(context.destination);
+        oscillator.start(barkStart);
+        oscillator.stop(barkStart + 0.17);
+      });
+
+      window.setTimeout(() => void context.close(), 700);
+    }
+
+    setCooperBarking(false);
+    window.requestAnimationFrame(() => setCooperBarking(true));
+    window.setTimeout(() => setCooperBarking(false), 700);
+  };
+
   const interactWithNearbyTarget = () => {
     if (!nearbyTarget) return;
     if (nearbyTarget.id === "record-player") {
       setSpotifyOpen((open) => !open);
+    } else if (nearbyTarget.id === "cooper") {
+      makeCooperBark();
     } else {
       setSelected(nearbyTarget.id);
     }
@@ -321,6 +368,8 @@ function App() {
     ? "Use register"
     : nearbyTarget?.id === "record-player"
       ? spotifyOpen ? "Hide Spotify" : "Play Mint"
+      : nearbyTarget?.id === "cooper"
+        ? "Pet Cooper"
       : "Pick it up";
 
   const walkToPointer = (event: ReactPointerEvent<HTMLDivElement>) => {
@@ -357,8 +406,8 @@ function App() {
             <div className="scene-frame" ref={sceneRef} tabIndex={-1} onPointerDown={walkToPointer}>
               <img
                 className="store-scene"
-                src="/images/danny-uniform-shop-pixel-v3.png"
-                alt="A warm beige, semi-top-down pixel-art boutique with five uniforms on the left wall and a checkout register on the right"
+                src="/images/danny-uniform-shop-pixel-v4.png"
+                alt="A warm beige, semi-top-down pixel-art boutique with five uniforms, a record player, and two plants beside the checkout register"
               />
 
               {displays.map((display) => {
@@ -392,6 +441,15 @@ function App() {
                 aria-hidden="true"
               >
                 <img src="/images/record-player-pixel-v1.png" alt="" />
+              </div>
+
+              <div
+                className={`cooper${cooperBarking ? " is-barking" : ""}`}
+                role="img"
+                aria-label="Cooper, Danny’s golden retriever"
+              >
+                <img src="/images/cooper-pixel-v1.png" alt="" />
+                {cooperBarking && <span className="cooper-bark" role="status">Woof!</span>}
               </div>
 
               <div
@@ -460,7 +518,7 @@ function App() {
                     </div>
                     {"href" in selectedDisplay && selectedDisplay.href && (
                       <a href={selectedDisplay.href} target="_blank" rel="noreferrer">
-                        Visit Komune
+                        {"linkLabel" in selectedDisplay ? selectedDisplay.linkLabel : "Learn more"}
                       </a>
                     )}
                   </>
