@@ -13,6 +13,6 @@ for (const directory of ["assets", "images"]) {
   cpSync(resolve(distRoot, directory), target, { recursive: true });
 }
 
-for (const file of ["index.html", "danny-zhang-resume.pdf", ".nojekyll"]) {
+for (const file of ["index.html", "danny-zhang-resume.pdf", ".nojekyll", "CNAME"]) {
   copyFileSync(resolve(distRoot, file), resolve(projectRoot, file));
 }
